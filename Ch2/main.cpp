@@ -94,7 +94,7 @@ void redEyeDetection(Mat &hls_image) {
 }
 
 // 2.4.1.1 Gaussian Noise
-void addGaussianNoise (Mat& image, double average=0.0,double standard_deviation=10.0) {
+void addGaussianNoise(Mat &image, double average = 0.0, double standard_deviation = 10.0) {
     // We need to work with signed images (as noise can be
     // negative as well as positive). We use 16 bit signed
     // images as otherwise we would lose precision.
@@ -107,36 +107,36 @@ void addGaussianNoise (Mat& image, double average=0.0,double standard_deviation=
 }
 
 // 2.4.1.2 Salt and Pepper Noise
-void addSaltAndPepperNoise(Mat& image, double noise_percentage) {
+void addSaltAndPepperNoise(Mat &image, double noise_percentage) {
     int image_rows = image.rows;
     int image_columns = image.cols;
     int image_channels = image.channels();
-    int noise_points = (int) (((double) image_rows * image_columns * image_channels) * noise_percentage / 100.0);
+    int noise_points = (int)(((double)image_rows * image_columns * image_channels) * noise_percentage / 100.0);
     for (int count = 0; count < noise_points; count++) {
         int row = rand() % image_rows;
         int column = rand() % image_columns;
         int channel = rand() % image_channels;
-        uchar* pixel = image.ptr<uchar>(row) + (column * image_channels) + channel;
+        uchar *pixel = image.ptr<uchar>(row) + (column * image_channels) + channel;
         *pixel = (rand() % 2 == 1) ? 255 : 0;
     }
 }
 
 // 2.5.1 Image Averaging
-void imageAverage(Mat& image1, Mat& image2, Mat& average_image) {
+void imageAverage(Mat &image1, Mat &image2, Mat &average_image) {
     addWeighted(image1, 0.5, image2, 0.5, 0.0, average_image);
 }
 
 // 2.5.2 Local Averaging and Gaussian Smoothing
-void localAverage(Mat& image, Mat& smoothed_image) {
-    blur(image, smoothed_image, Size(3,3));
+void localAverage(Mat &image, Mat &smoothed_image) {
+    blur(image, smoothed_image, Size(3, 3));
 }
 
-void gaussianSmoothing (Mat& image, Mat& smoothed_image) {
-    GaussianBlur(image, smoothed_image, Size(5,5), 1.5);
+void gaussianSmoothing(Mat &image, Mat &smoothed_image) {
+    GaussianBlur(image, smoothed_image, Size(5, 5), 1.5);
 }
 
 // 2.5.4 Median Filter
-void medianFilter(Mat& image, Mat& smoothed_image) {
+void medianFilter(Mat &image, Mat &smoothed_image) {
     medianBlur(image, smoothed_image, 5);
 }
 
