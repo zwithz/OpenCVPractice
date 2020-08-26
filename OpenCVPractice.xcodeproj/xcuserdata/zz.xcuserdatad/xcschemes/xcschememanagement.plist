@@ -4,35 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Ch10.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Ch2.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>Ch3.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>Ch4.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>Ch5.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>Ch6.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Ch7.xcscheme_^#shared#^_</key>
+		<key>Ch3.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Ch4.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>Ch5.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Ch6.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Ch7.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Ch8.xcscheme_^#shared#^_</key>
 		<dict>
@@ -42,7 +47,7 @@
 		<key>Ch9.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>3</integer>
 		</dict>
 		<key>OpenCVPractice.xcscheme_^#shared#^_</key>
 		<dict>
@@ -58,6 +63,16 @@
 			<true/>
 		</dict>
 		<key>3ADBF4E524C2C444005A5E71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3ADBF4F024C2C4F0005A5E71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AFEA73B24F63FB3002B4712</key>
 		<dict>
 			<key>primary</key>
 			<true/>
